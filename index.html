@@ -1,0 +1,64 @@
+<html>
+    <title>Convert ZeroNet Domain</title>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+          <br><br>
+          <center><img src="http://botman.tech/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/img/logo.svg" height="200" width="200"></center><br><br>
+          <center><label for="inputlink">Enter your ZeroNet Website Link</label><br>
+          <textarea id="link" placeholder="http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH..............." rows="1" cols="100"></textarea><br><br>
+          <button id="convert" class="btn btn-primary" onclick="conv2()">Open With zero.acelewis.com ZeroNet Proxy</button><br><br>
+          <button id="convert" class="btn btn-primary" onclick="conv1()">Open With Botman.tech ZeroNet Proxy</button><br><br>
+        <button id="convert" class="btn btn-primary" onclick="conv3()">Open With 0net.io ZeroNet Proxy</button></center>
+        <script>
+          //https://zero.acelewis.com/
+          function conv1(){
+            var url = document.getElementById("link").value;
+            if(url.length < 57){
+              alert("Invalid URL !! \n Please Check URL again and Retry.")
+            }
+            else if(url.length > 58){
+              alert("Invalid URL !! \n Please Check URL again and Retry.")
+            }
+            else{
+              var trimurl = url.substr(22);
+              var convurl = "https://botman.tech" + trimurl;
+              window.open(convurl,"_blank");
+            }
+          }
+          function conv2(){
+            var url = document.getElementById("link").value;
+            if(url.length < 57){
+              alert("Invalid URL !! \n Please Check URL again and Retry.")
+            }
+            else if(url.length > 58){
+              alert("Invalid URL !! \n Please Check URL again and Retry.")
+            }
+            else{
+              var trimurl = url.substr(22);
+              var convurl = "https://zn.amorgan.xyz" + trimurl;
+              window.open(convurl,"_blank");
+            }
+          }
+          function conv3(){
+            var url = document.getElementById("link").value;
+            if(url.length < 57){
+              alert("Invalid URL !! \n Please Check URL again and Retry.")
+            }
+            else if(url.length > 58){
+              alert("Invalid URL !! \n Please Check URL again and Retry.")
+            }
+            else{
+              var trimurl = url.substr(22);
+              var convurl = "https://0net.io" + trimurl;
+              window.open(convurl,"_blank");
+            }
+          }
+        </script>
+    </body>
+</html>
